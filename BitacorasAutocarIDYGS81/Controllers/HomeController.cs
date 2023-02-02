@@ -32,6 +32,11 @@ namespace BitacorasAutocarIDYGS81.Controllers
             return View();
         }
 
+        public IActionResult crearactividad()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
