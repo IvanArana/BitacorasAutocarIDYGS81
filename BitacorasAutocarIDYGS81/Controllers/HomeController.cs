@@ -23,6 +23,10 @@ namespace BitacorasAutocarIDYGS81.Controllers
             return View();
         }
 
+        public IActionResult Perfil()
+        {
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();

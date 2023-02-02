@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Perfil";
+    Layout = "_Layout";
+}
+<style>
+        .formulario {
+
+        display: block;
+        padding: 10pxx;
+        text-align:center;
+        margin:0 auto;
+    }
+
+    .formulario div {
+    width:40%;
+    margin: 40px auto;
+    text-align:center;
+    }
+</style>
+
+<div class="text-center">
+    <h1>@ViewData["Title"]</h1>
+
+    <p></p>
+
+    <div class="formulario">
+        <form action="">
+            <div>
+                <label for="nombre"></label>
+                <input id="nombre" type="text" value="Nombre">
+            </div>
+            <div>
+                <label for="Email"></label>
+                <input id="email" type="email" value="Email">
+            </div>
+            <div>
+                <label for="pass"></label>
+                <input id="pass" type="password" value="Password">
+            </div>
+            <button class ="btn btn-primary btn-xs">Guardar</button>
+
+        </form>
+    </div>
+</div>
