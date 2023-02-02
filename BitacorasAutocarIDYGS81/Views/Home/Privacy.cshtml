@@ -1,10 +1,46 @@
 ﻿@{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "Registro";
     Layout = "_Layout";
 }
 
-<div class="text-left">
-    <h1>@ViewData["Title"]</h1>
+<style>
+    .form {
+        display: block;
+        padding: 10pxx;
+        text-align: center;
+        margin: 0 auto;
+        background: #f5f5f1;
+    }
 
-    <p>Use this page to detail your site's privacy policy.</p>
+    .form div {
+        width: 40%;
+        margin: 30px auto;
+        text-align: center;
+    }
+</style>
+
+<div class="text-center">
+    <p></p>
+    <div class="form">
+        <h1>@ViewData["Title"]</h1>
+    <form action="">
+            <div class="mb-3">
+                <label for="Name1" class="form-label">Nombre</label>
+                <input type="nombre" class="form-control" id="nombre">
+            </div>
+            <div class="mb-3">
+                <label for="Email1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="InputPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="InputPassword">
+            </div>
+            <div class="mb-3">
+                <label for="InputPassword1" class="form-label">Confirmar Password</label>
+                <input type="password" class="form-control" id="inputPassword1">
+            </div>
+            <button type="submit" class="btn btn-dark">Registar</button>
+        </form>
+    </div>
 </div>
