@@ -3,55 +3,66 @@
     Layout = "_Layout";
 }
 
-<style type="text/css">
-    .tftable {
-        font-size: 12px;
-        color: #fbfbfb;
-        width: 100%;
-        border-width: 1px;
-        border-color: #686767;
-        border-collapse: collapse;
-    }
-
-        .tftable th {
-            font-size: 12px;
-            background-color: #171515;
-            border-width: 1px;
-            padding: 8px;
-            border-style: solid;
-            border-color: #686767;
-            text-align: left;
-        }
-
-        .tftable tr {
-            background-color: #171515;
-        }
-
-        .tftable td {
-            font-size: 12px;
-            border-width: 1px;
-            padding: 8px;
-            border-style: solid;
-            border-color: #686767;
-        }
-
-        .tftable tr:hover {
-            background-color: #666666;
-        }
-</style>
+<link rel="stylesheet" href="/css/tabla.css" />
 
 
-<h1>Lista de actividades</h1>
-<h5>welcome to this beautiful admin panel </h5>
-<button class="btn btn-primary btn-xs">Crear Actividad</button>
+<div class="text-left">
+    <h1>Lista de actividades</h1>
+    <h5>welcome to this beautiful admin panel </h5>
 
-<input type="search" size="15" maxlength="30" value="Filtrar" name="Filtrar">
+    <div class="text-left">
+        <button class="btn btn-outline-primary btn-xs text-decoration-none">
+            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="crearactividad">
+                Crear Actividad
+            </a>
+        </button>
+    </div>
 
-<table class="tftable" border="1">
-    <tr><th> Acciones </th><th> Estatus </th><th> Fecha </th><th>Lugar </th><th>Num.Unidad</th><th>Descripcion</th><th>Titulo</th><th> ID </th></tr>
-    <tr> <td><button class="btn btn-primary btn-xs">Ver Detalle</button></td><td>En proceso</td><td>2023-01-20:22:59</td><td>Zona Hotelera</td><td>555</td><td>Desmontar campaña</td><td>Desmontaje</td><td>1</td></tr>
-    <tr><td><button class="btn btn-primary btn-xs">Ver Detalle</button></td><td>Zona Hotelera</td><td>556</td><td>Montar campaña</td><td>Montaje</td><td>2</td></tr>
-</table>
+    <div class="text-right">
+        <input type="search" size="15" maxlength="30" value="Filtrar" name="Filtrar">
+    </div>
+
+    <br />
+
+    <table class="tftable" border="1">
+
+        <thead>
+            <tr>
+                <th> Acciones </th>
+                <th> Estatus </th>
+                <th> Fecha </th>
+                <th>Tipo. Unidad </th>
+                <th>Num.Unidad</th>
+                <th>Descripcion</th>
+                <th>Titulo</th>
+                <th> ID </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><button class="btn btn-primary btn-xs">Ver Detalle</button></td>
+                <td>En proceso</td>
+                <td>2023-01-20:22:59</td>
+                <td>Zona Hotelera</td>
+                <td>555</td>
+                <td>Desmontar campaña</td>
+                <td>Desmontaje</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td><button class="btn btn-primary btn-xs">Ver Detalle</button></td>
+                <td>En proceso</td>
+                <td>2023-01-20:22:59</td>
+                <td>Zona Hotelera</td>
+                <td>556</td>
+                <td>Montar campaña</td>
+                <td>Montaje</td>
+                <td>2</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
 
 
 
